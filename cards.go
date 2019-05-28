@@ -26,9 +26,6 @@ func main() {
 	// cards.print()
 	//otherCards.print()
 
-
-
-
 	newCards.shuffle()
 	newCards.print()
 
