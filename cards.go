@@ -11,15 +11,13 @@ func main() {
 	newCards := newDeck()
 	//hand, remainingCards := deal(newCards, 3)
 
-
-	fileName := "cards.txt"
-	newCards.saveToFile(fileName)
+	// fileName := "cards.txt"
+	// newCards.saveToFile(fileName)
 
 	//fmt.Println(ss)
 
-	fromFile := newDeckFromFile(fileName)
-	fromFile.print()
-
+	// fromFile := newDeckFromFile(fileName)
+	// fromFile.print()
 
 	//hand.print()
 	//fmt.Println("-----------------------")
@@ -27,6 +25,12 @@ func main() {
 
 	// cards.print()
 	//otherCards.print()
+
+
+
+
+	newCards.shuffle()
+	newCards.print()
 
 }
 
