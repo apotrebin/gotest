@@ -25,6 +25,8 @@ func main(){
 	// fmt.Printf("%+v", akram)
 
 
+
+
 	jim := person{
 		firstName: "Jim",
 		lastName: "Doe",
@@ -34,11 +36,10 @@ func main(){
 		},
 	}
 
-	jimPointer := &jim
-	jimPointer.updateName("Jimmy")
-	jim.print()
+	// jimPointer := &jim
+	jim.updateName("Jimmy")
+	jim.print() 
 
-	
 }
 
 
