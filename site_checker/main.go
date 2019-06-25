@@ -36,6 +36,7 @@ func checkLink(link string, c chan string) {
 		c <- link
 		return
 	}
+
 	fmt.Println(link, "is up")
 	c <- link
 }
