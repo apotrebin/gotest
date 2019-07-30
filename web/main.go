@@ -28,6 +28,13 @@ func productsHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, response)
 }
 
+func mainHandler(w http.ResponseWriter, r *http.Request) {
+	// vars := mux.Vars(r)
+	// id := vars["id"]
+	response := fmt.Sprintf("This is a main page")
+	fmt.Fprint(w, response)
+}
+
 func main() {
 	// portNumber := "8181"
 	// hostPath := "localhost:" + portNumber
@@ -67,6 +74,8 @@ func main() {
 
 	router := mux.NewRouter()
 	router.HandleFunc("/products/{id:[0-9]+}", productsHandler)
+	router.HandleFunc("/", mainHandler)
+
 	http.Handle("/", router)
 
 	fmt.Println("Server is listening...")
